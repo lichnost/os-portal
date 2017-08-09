@@ -1,0 +1,13 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' xmlns:m="urn:import:gwt.material.design.client.ui"
+	xmlns:ma="urn:import:gwt.material.design.addins.client">
+
+	<m:MaterialRow>
+		<m:MaterialButton ui:field="createButton"
+              backgroundColor="blue" waves="LIGHT" text="Create" width="100%" />
+        <m:MaterialButton ui:field="deleteButton"
+              backgroundColor="blue" waves="LIGHT" text="Delete" width="100%" />
+	</m:MaterialRow>
+	<g:SimplePanel ui:field="serversPanel" />
+
+</ui:UiBinder>

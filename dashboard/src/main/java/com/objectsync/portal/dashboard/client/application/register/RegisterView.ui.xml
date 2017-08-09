@@ -1,0 +1,52 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+  xmlns:g='urn:import:com.google.gwt.user.client.ui' xmlns:m="urn:import:gwt.material.design.client.ui">
+
+  <ui:style>
+  .panel {
+  	  background-color: blue;
+  	  background-size: 100%;
+  	  padding: 0px !important;
+  	  padding-top: 40% !important;
+  }
+  
+  .fieldPanel {
+  	  background: white;
+  	  padding: 6%;
+  }
+  
+  .rowAction {
+  	  margin-top: 20px;
+  }
+  
+  .login_demo {
+  	  padding: 5%;
+  }
+  </ui:style>
+
+  <m:MaterialPanel textAlign="CENTER">
+
+    <m:MaterialPanel addStyleNames="{style.fieldPanel}">
+      <m:MaterialPanel shadow="1" addStyleNames="{style.panel}">
+        <m:MaterialColumn grid="s12 m8 l6" offset="l4">
+          <m:MaterialRow backgroundColor="grey lighten-4"
+            addStyleNames="{style.login_demo}">
+            <m:MaterialTextBox ui:field="email" type="EMAIL"
+              placeholder="Email" />
+            <m:MaterialTextBox ui:field="password"
+              type="PASSWORD" placeholder="Password" />
+            <m:MaterialTextBox ui:field="passwordRepeat"
+              type="PASSWORD" placeholder="Repeat password" />
+            <m:MaterialButton ui:field="registerButton"
+              backgroundColor="blue" waves="LIGHT" text="Register" width="100%" />
+            <m:MaterialButton ui:field="loginButton"
+              backgroundColor="blue" waves="LIGHT" text="Log In" width="100%" />
+          </m:MaterialRow>
+        </m:MaterialColumn>
+      </m:MaterialPanel>
+    </m:MaterialPanel>
+    <!-- <m:MaterialTextBox ui:field="email" type="EMAIL" placeholder="Email"/> 
+      <m:MaterialTextBox ui:field="password" type="PASSWORD" placeholder="Password" 
+      /> <m:MaterialButton ui:field="loginButton" backgroundColor="blue" waves="LIGHT" 
+      text="Log In" width="100%"/> -->
+  </m:MaterialPanel>
+</ui:UiBinder>

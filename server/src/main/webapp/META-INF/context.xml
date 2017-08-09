@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/">
+
+	<!-- Domain -->
+	<Environment name="ObjectSync/server/domain/hipache-redis-host"
+		value="${domain-hipache-redis-host}" type="java.lang.String" override="false" />
+	<Environment name="ObjectSync/server/domain/hipache-redis-password"
+		value="${domain-hipache-redis-password}" type="java.lang.String"
+		override="false" />
+	<Environment name="ObjectSync/server/domain/hipache-redis-port"
+		value="${domain-hipache-redis-port}" type="java.lang.String" override="false" />
+	<Environment name="ObjectSync/server/domain/domain" value="${domain-domain}"
+		type="java.lang.String" override="false" />
+
+	<!-- Lifecycle -->
+	<Environment name="ObjectSync/server/lifecycle/hazelcast-group-name"
+		value="${lifecycle-hazelcast-group-name}" type="java.lang.String"
+		override="false" />
+	<Environment name="ObjectSync/server/lifecycle/hazelcast-group-password"
+		value="${lifecycle-hazelcast-group-password}" type="java.lang.String"
+		override="false" />
+
+	<!-- Workspace -->
+	<Environment name="ObjectSync/server/workspace/cassandra-host"
+		value="${workspace-cassandra-host}" type="java.lang.String" override="false" />
+	<Environment name="ObjectSync/server/workspace/cassandra-port"
+		value="${workspace-cassandra-port}" type="java.lang.String" override="false" />
+	<Environment name="ObjectSync/server/workspace/cassandra-username"
+		value="${workspace-cassandra-username}" type="java.lang.String"
+		override="false" />
+	<Environment name="ObjectSync/server/workspace/cassandra-password"
+		value="${workspace-cassandra-password}" type="java.lang.String"
+		override="false" />
+
+</Context>
